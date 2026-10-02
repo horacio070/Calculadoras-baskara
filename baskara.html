@@ -11,6 +11,37 @@
     <input type="text" id="aValue" />x²
     <input type="text" id="bValue" />x
     <input type="text" id="cValue" /> = 0
-    
+    <br />
+    <input type="button" onclick="calcular()" value="Calcular" />
+
+    <script>    
+       function calcular() {
+        let valorA = document.getElementById("aValue");
+        let valorB = document.getElementById("bValue");
+        let valorC = document.getElementById("cValue");
+
+       let delta = valorB * valorB - 4 * valorA * valorC
+       valorB = valorB * -1
+       
+       if(delta < 0){
+        alert("Erro: Delta menor que zero")
+       }
+
+       else if (delta > 0){
+        delta = delta ** 0.5
+        let x1 = (valorB + delta) / 2 * valorA
+       let x2 = (valorB - delta) / 2 * valorA
+       alert("X¹ = ", x1, "X² = ", x2)
+       }
+       
+       else {
+        let x1 = valorB / 2 * valorA
+        alert ("X¹ = ", x1)
+       }
+
+        }
+      
+    </script>
+
 </body>
 </html>
