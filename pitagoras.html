@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pitagoras</h1>
+
+    <input type="text" id="valueA">² +
+    <input type="text" id="valueB">² =
+    <input type="text" id="valueC">²
+
+    <br />
+
+    <input type="button"  onclick="calcular()" value="Calcular" />
+    <br />
+    <img src="pitagoras.png" width="150">
+
+
+    <script>
+        
+        function calcular() {
+
+    let valorA = document.getElementById("valueA").value;
+    let valorB = document.getElementById("valueB").value;
+    let valorC = document.getElementById("valueC").value;
+
+    valorA = Number(valorA);
+    valorB = Number(valorB);
+    valorC = Number(valorC);
+
+console.log(valorA)
+console.log(valorB)
+console.log(valorC)
+
+
+
+
+
+
+
+
+
+    
+ *    if (valorA > 0 && valorB > 0 || valorC > 0) {
+
+        let resultado = (valorA ** 2 + valorB ** 2) ** 0.5;
+        alert("C = " + resultado);
+
+    }
+
+    
+    else if (valorA > 0 && valorC > 0 || valorB == 0) {
+
+        let resultado = (valorC ** 2 - valorA ** 2) ** 0.5;
+        alert("B = " + resultado);
+
+    }
+
+    
+    else if (valorB > 0 && valorC > 0 || valorA == 0) {
+
+        let resultado = (valorC ** 2 - valorB ** 2) ** 0.5;
+        alert("A = " + resultado);
+
+    }
+
+    else {
+        alert("Preencha exatamente dois valores.");
+    } */
+}
+
+    
+
+    </script>
+
+
+</body>
+</html>
